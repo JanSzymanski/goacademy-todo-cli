@@ -26,9 +26,8 @@ func printMenu(tds *hl.TodoStore) int {
 	displayVaultInfo(tds)
 	fmt.Println("==== Main Menu ====")
 	fmt.Println("1. Display ToDos")
-	fmt.Println("2. Display details of a ToDo")
-	fmt.Println("3. Add ToDo")
-	fmt.Println("4. Exit")
+	fmt.Println("2. Add ToDo")
+	fmt.Println("3. Exit")
 
 	scanner := bufio.NewScanner(os.Stdin)
 	var input int
@@ -196,10 +195,8 @@ func main() {
 		case 1:
 			displayTodos(todostore)
 		case 2:
-			displayTodo(todostore)
-		case 3:
 			addTodo(todostore)
-		case 4:
+		case 3:
 			exit = true
 			fmt.Println("Closing ToDo app")
 		default:
