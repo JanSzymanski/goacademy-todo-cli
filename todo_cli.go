@@ -6,7 +6,7 @@ import (
 	"os"
 	"strconv"
 
-	hl "github.com/JanSzymanski/goacademy-todo-cli/todostorelib"
+	hl "github.com/JanSzymanski/todostorelib"
 )
 
 var clearingBytes = [...]byte{0x1B, 0x5B, 0x33, 0x3B, 0x4A, 0x1B, 0x5B, 0x48, 0x1B, 0x5B, 0x32, 0x4A}
